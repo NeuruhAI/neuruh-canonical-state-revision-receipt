@@ -1,7 +1,7 @@
 {
   "artifact": "canonical-state-revision-receipt",
   "maturity": "ACTIVE_ALPHA",
-  "package_version": "0.1.0a0",
+  "package_version": "0.1.1a0",
   "public_boundary": {
     "customer_data": false,
     "domain_recipes": false,
@@ -14,24 +14,24 @@
     "proprietary_scoring": false
   },
   "qualification": {
-    "cli_smoke": "PASS",
-    "exact_public_composition": "PASS",
-    "git_history_gitleaks": "PASS",
+    "cli_smoke": "PENDING",
+    "exact_public_composition": "PENDING",
+    "git_history_gitleaks": "PENDING",
     "license": "Apache-2.0",
-    "private_implementation_reference_scan": "PASS",
-    "source_secret_pattern_scan": "PASS",
-    "synthetic_end_to_end": "PASS",
+    "private_implementation_reference_scan": "PENDING",
+    "source_secret_pattern_scan": "PENDING",
+    "synthetic_end_to_end": "PENDING",
     "synthetic_examples_only": true,
     "tests": {
-      "count": 28,
-      "status": "PASS"
+      "count": 0,
+      "status": "PENDING"
     },
-    "wheel_build": "PASS"
+    "wheel_build": "PENDING"
   },
-  "qualified_at": "2026-08-10T02:06:14.418109+00:00",
-  "release_version": "v0.1.0-alpha",
+  "qualified_at": null,
+  "release_version": "v0.1.1-alpha",
   "repository": "NeuruhAI/neuruh-canonical-state-revision-receipt",
   "schema_version": "neuruh.public-release-receipt.v1",
-  "status": "APPROVED_FOR_PUBLIC_RELEASE",
-  "tested_source_commit": "f2e8f800d2e844f9397ea27d151aab67c9e19db1"
+  "status": "QUALIFIED_FOR_PATCH_RELEASE",
+  "tested_source_commit": null
 }

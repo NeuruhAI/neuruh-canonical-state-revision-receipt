@@ -134,6 +134,8 @@ class CanonicalStateRevisionReceipt:
             if v not in STAGES:raise CanonicalRevisionReceiptError(f"{n} must be a known lifecycle stage")
         if self.revision_mode!=REVISION_MODE:
             raise CanonicalRevisionReceiptError("v0.1 supports adopt_observed only")
+        if self.target_canonical_stage != self.pre_canonical_stage:
+            raise CanonicalRevisionReceiptError("canonical state revision receipt cannot evidence a lifecycle-stage change")
         if self.status not in STATUSES:
             raise CanonicalRevisionReceiptError("unknown status")
         if self.pre_canonical_stage==self.target_canonical_stage and self.pre_canonical_state_digest==self.target_canonical_state_digest:

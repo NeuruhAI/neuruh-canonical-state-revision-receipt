@@ -18,6 +18,7 @@ class T(unittest.TestCase):
  def test_roundtrip(self):self.assertEqual(CanonicalStateRevisionReceipt.from_mapping(r().to_dict()),r())
  def test_success_exact(self):self.assertEqual(r().post_canonical_state_digest,H("o"))
  def test_success_wrong_stage(self):self.bad(lambda:r(post_canonical_stage="production"))
+ def test_cross_stage_target_rejected(self):self.bad(lambda:r(target_canonical_stage="production",post_canonical_stage="production"))
  def test_success_wrong_state(self):self.bad(lambda:r(post_canonical_state_digest=H("x")))
  def test_failed_can_differ(self):r(status="failed",post_canonical_state_digest=H("x")).validate()
  def test_actual_change_required(self):self.bad(lambda:r(target_canonical_state_digest=H("c"),post_canonical_state_digest=H("c")))

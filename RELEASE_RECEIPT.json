@@ -38,5 +38,5 @@
   "repository": "NeuruhAI/neuruh-canonical-state-revision-receipt",
   "schema_version": "neuruh.public-release-receipt.v1",
   "status": "APPROVED_FOR_PUBLIC_RELEASE",
-  "tested_source_commit": "PENDING_COMMIT"
+  "tested_source_commit": "25d015b5bddae7418354e33dea5e22716cf1d82f"
 }

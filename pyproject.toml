@@ -1,16 +1,23 @@
 [build-system]
-requires=["setuptools>=68"]
-build-backend="setuptools.build_meta"
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
 
 [project]
-name="neuruh-canonical-state-revision-receipt"
-version="0.1.1a0"
-description="Evidence receipt for one externally applied canonical-state revision without mutating the lifecycle ledger."
-requires-python=">=3.11"
-license={text="Apache-2.0"}
+name = "neuruh-canonical-state-revision-receipt"
+version = "0.1.2a0"
+description = "Evidence receipt for one externally applied canonical-state revision without mutating the lifecycle ledger."
+requires-python = ">=3.11"
+readme = "README.md"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE"]
+authors = [{name = "Jeramie Hicks / Neuruh"}]
 
 [project.scripts]
 neuruh-canonical-state-revision-receipt="neuruh_canonical_state_revision_receipt.cli:main"
 
+[project.urls]
+Homepage = "https://github.com/NeuruhAI/neuruh-canonical-state-revision-receipt"
+Repository = "https://github.com/NeuruhAI/neuruh-canonical-state-revision-receipt"
+
 [tool.setuptools.packages.find]
-where=["src"]
+where = ["src"]

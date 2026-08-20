@@ -1,7 +1,7 @@
 {
   "artifact": "canonical-state-revision-receipt",
   "maturity": "ACTIVE_ALPHA",
-  "package_version": "0.1.1a0",
+  "package_version": "0.1.2a0",
   "public_boundary": {
     "customer_data": false,
     "domain_recipes": false,
@@ -14,24 +14,29 @@
     "proprietary_scoring": false
   },
   "qualification": {
+    "clean_environment_install": "PASS",
     "cli_smoke": "PASS",
+    "continuous_integration": "github-actions/.github/workflows/ci.yml",
     "exact_public_composition": "PASS",
     "git_history_gitleaks": "PASS",
     "license": "Apache-2.0",
+    "license_text_complete": true,
     "private_implementation_reference_scan": "PASS",
+    "revalidated_at": "2026-08-20T06:51:36.853005+00:00",
     "source_secret_pattern_scan": "PASS",
     "synthetic_end_to_end": "PASS",
     "synthetic_examples_only": true,
     "tests": {
+      "command": "python -m unittest discover -s tests -v",
       "count": 29,
       "status": "PASS"
     },
     "wheel_build": "PASS"
   },
-  "qualified_at": "2026-08-10T02:32:26.840069+00:00",
-  "release_version": "v0.1.1-alpha",
+  "qualified_at": "2026-08-20T06:51:36.853005+00:00",
+  "release_version": "v0.1.2-alpha",
   "repository": "NeuruhAI/neuruh-canonical-state-revision-receipt",
   "schema_version": "neuruh.public-release-receipt.v1",
   "status": "APPROVED_FOR_PUBLIC_RELEASE",
-  "tested_source_commit": "31e1be3bfdfd86b932add1be38c46663eba85528"
+  "tested_source_commit": "PENDING_COMMIT"
 }

@@ -1,5 +1,7 @@
 # Neuruh Canonical State Revision Receipt
 
+[![ci](https://github.com/NeuruhAI/neuruh-canonical-state-revision-receipt/actions/workflows/ci.yml/badge.svg)](https://github.com/NeuruhAI/neuruh-canonical-state-revision-receipt/actions/workflows/ci.yml)
+
 Public Commons Release 034.
 
 A deterministic evidence receipt for an externally applied canonical-state revision.
